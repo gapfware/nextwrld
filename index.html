@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="next_wrld_title">Next Wrld - Impulsamos tu negocio con motores digitales modulares</title>
+    <meta name="description"
+        content="Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu empresa." />
+    <link rel="canonical" href="https://nextwrld.com" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Favicon configuration -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/logo.png" />
+    <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/logo.png" />
+    <meta name="msapplication-TileImage" content="./assets/logo/logo.png" />
+    <meta name="theme-color" content="#7e22ce" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Next Wrld - Impulsamos tu negocio con motores digitales modulares" />
+    <meta property="og:description"
+        content="Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu empresa." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nextwrld.com" />
+    <meta property="og:image" content="https://nextwrld.com/assets/images/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Next Wrld - Impulsamos tu negocio con motores digitales modulares" />
+    <meta name="twitter:description"
+        content="Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu empresa." />
+    <meta name="twitter:image" content="https://nextwrld.com/assets/images/og-image.jpg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Next Wrld",
+            "url": "https://nextwrld.com",
+            "logo": "https://nextwrld.com/assets/logo/logo.png",
+            "description": "Impulsamos tu negocio con motores digitales modulares. Soluciones para escalar empresas.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+54-11-1234-5678",
+                "contactType": "customer service",
+                "email": "hola@nextwrld.com"
+            },
+            "sameAs": [
+                "https://www.instagram.com/nextwrldengine",
+                "https://www.linkedin.com/company/nextwrld",
+                "https://twitter.com/nextwrldengine"
+            ]
+        }
+        </script>
+
+    <link rel="stylesheet" href="./css/tailwind-build.css">
+    <link rel="stylesheet" href="css/index.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section[id] {
+            scroll-margin-top: 80px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .reveal-up {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white">
+
+    <header
+        class="tw-sticky tw-top-0 tw-z-20 tw-flex tw-items-center tw-h-[60px] max-lg:tw-h-auto tw-w-full tw-bg-black tw-bg-opacity-90 tw-backdrop-blur-sm tw-px-[5%] lg:tw-justify-center lg:tw-gap-8">
+        <a class="tw-h-[60px] tw-w-[60px] tw-p-[4px]" href="#hero">
+            <img src="./assets/logo/logo.png" alt="Logo de Next Wrld" class="tw-object tw-h-full tw-w-full" width="60"
+                height="60" loading="eager" decoding="async" />
+        </a>
+        <span class="headline tw-text-3xl tw-font-bold lg:tw-ml-4" style="white-space: nowrap;">NEXT WRLD</span>
+        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md tw-hidden lg:tw-flex" id="collapsed-header-items">
+            <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-flex-col max-lg:tw-place-items-center max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+                <a class="header-links" href="#servicios" data-i18n="servicios" onclick="closeMobileMenu()">Servicios</a>
+                <a class="header-links" href="#por-que-elegirnos" data-i18n="porQueElegirnos" onclick="closeMobileMenu()">Por qué elegirnos</a>
+                <a class="header-links" href="#sobre-nosotros" data-i18n="sobreNosotros" onclick="closeMobileMenu()">Sobre nosotros</a>
+                <a class="header-links" href="#contacto" data-i18n="contacto" onclick="closeMobileMenu()">Contacto</a>
+            </div>
+            <div
+                class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+                <div class="tw-relative">
+                    <div class="tw-flex tw-items-center tw-gap-1">
+                        <button id="lang-es" class="tw-px-3 tw-py-1 tw-text-sm tw-bg-gray-700 tw-text-white tw-rounded hover:tw-bg-purple-700 tw-transition-colors" onclick="window.changeLanguage('es')">ESP</button>
+                        <button id="lang-en" class="tw-px-3 tw-py-1 tw-text-sm tw-bg-gray-700 tw-text-white tw-rounded hover:tw-bg-purple-700 tw-transition-colors" onclick="window.changeLanguage('en')">ENG</button>
+                    </div>
+                </div>
+                <a href="#contacto" aria-label="Iniciar conversación"
+                    class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2 tw-focus-visible:tw-ring-2 tw-focus-visible:tw-ring-white"
+                    data-i18n="iniciarConversacion" onclick="closeMobileMenu()">
+                    Iniciar conversación
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white tw-hidden max-lg:tw-block"
+            onclick="toggleHeader()" aria-label="Abrir menú" aria-controls="collapsed-header-items"
+            aria-expanded="false" id="collapse-btn"></button>
+    </header>
+
+    <main id="main-content">
+        <section
+            class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero">
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4">
+                <div class="tw-flex tw-flex-col tw-place-content-center tw-items-center">
+                    <div
+                        class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+                        <span class="headline" data-i18n="heroTitle">Impulsamos tu negocio con</span>
+                        <br />
+                        <span class="headline" data-i18n="heroTitle2">motores digitales modulares</span>
+                    </div>
+                    <div class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
+                        data-i18n="heroSubtitle">
+                        Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu
+                        empresa.
+                    </div>
+
+                    <div class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4">
+                        <a class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03] tw-focus-visible:tw-ring-2 tw-focus-visible:tw-ring-white"
+                            href="#contacto" data-i18n="heroCTA">
+                            Activar mi motor digital
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="servicios">
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+          <h2 id="servicios-title" data-i18n="serviciosTitle" class="headline tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl">
+            Servicios
+          </h2>
+          <p class="tw-mt-3 tw-text-gray-300" data-i18n="serviciosDesc">Motores digitales que se adaptan a tu negocio para ver resultados desde el primer día.</p>
+        </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                        <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                            <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                                <i
+                                    class="bi bi-rocket-takeoff-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                                data-i18n="beneficio1Title">
+                                Eficiencia Digital
+                            </h3>
+                            <div class="tw-text-gray-300" data-i18n="beneficio1Desc">
+                                Automatizamos procesos repetitivos para que te enfoques en lo que realmente importa:
+                                hacer crecer tu negocio.
+                            </div>
+                        </div>
+                        <a href="#contacto" class="link-cta" data-i18n="linkCta1">Quiero ahorrar mas tiempo</a>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                        <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-text-[150px]">
+                            <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                                <i
+                                    class="bi bi-layout-sidebar-inset tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                                data-i18n="beneficio2Title">
+                                Núcleo Digital a Medida
+                            </h3>
+                            <div class="tw-text-gray-300" data-i18n="beneficio2Desc">
+                                Construimos un sistema centralizado que se adapta a tus necesidades específicas,
+                                escalando con tu empresa.
+                            </div>
+                        </div>
+                        <a href="#contacto" class="link-cta" data-i18n="linkCta2">Quiero escalar mi sistema</a>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]">
+                        <div class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]">
+                            <div class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2">
+                                <i
+                                    class="bi bi-lightning-charge-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                                data-i18n="beneficio3Title">
+                                Crecimiento Tecnológico
+                            </h3>
+                            <div class="tw-text-gray-300" data-i18n="beneficio3Desc">
+                                Integramos las últimas tecnologías para potenciar tu presencia digital y alcanzar nuevos
+                                mercados.
+                            </div>
+                        </div>
+                        <a href="#contacto" class="link-cta" data-i18n="linkCta3">Quiero más clientes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="por-que-elegirnos">
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="headline tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
+                        data-i18n="elegirTitle">
+                        Por qué elegir Next Wrld
+                    </h2>
+                </div>
+                <div class="tw-mt-6 tw-grid tw-grid-cols-2 tw-gap-8 tw-max-w-[80%] max-md:tw-max-w-[90%] tw-mx-auto">
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-full tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8">
+                        <div class="tw-text-4xl">
+                            🚀
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl" data-i18n="elegirItem1Title">
+                                Enfoque en resultados
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm" data-i18n="elegirItem1Desc">
+                                cada acción está pensada para devolverte valor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-full tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8">
+                        <div class="tw-text-4xl">
+                            ⚙️
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl" data-i18n="elegirItem2Title">
+                                Eficiencia sin fricción
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm" data-i18n="elegirItem2Desc">
+                                menos tareas repetitivas, más tiempo para crecer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-full tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8">
+                        <div class="tw-text-4xl">
+                            🧩
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl" data-i18n="elegirItem3Title">
+                                Modularidad real
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm" data-i18n="elegirItem3Desc">
+                                activás solo los motores que necesitás.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-full tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8">
+                        <div class="tw-text-4xl">
+                            🤝
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl" data-i18n="elegirItem4Title">
+                                Cercanía
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm" data-i18n="elegirItem4Desc">
+                                no vendemos servicios sueltos, construimos resultados con vos.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="sobre-nosotros">
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10">
+                <div class="tw-flex">
+                    <div
+                        class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img src="./assets/images/people/team.png"
+                            alt="Equipo de Next Wrld trabajando en soluciones digitales"
+                            class="tw-h-full tw-w-full tw-object-cover" width="850" height="650" loading="lazy"
+                            decoding="async" />
+                    </div>
+                </div>
+                <div class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4">
+                    <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl" data-i18n="sobreQuote">
+                        "Un equipo joven que piensa como vos"
+                    </h3>
+
+                    <p class="tw-text-lg tw-text-gray-300 max-md:tw-text-base tw-mt-4" data-i18n="sobreDesc">“Somos nextwrld, un equipo que
+                        combina tecnología y creatividad para que tu negocio tenga la agilidad de una empresa joven y la
+                        fuerza de un socio tecnológico estratégico. Nacimos para acompañar a pequeñas y medianas
+                        empresas en su transformación digital, con un enfoque simple: soluciones claras, procesos ágiles
+                        y resultados medibles.”</p>
+
+                        
+                    <h4 class="tw-text-2xl tw-font-medium tw-mt-6" data-i18n="sobreTrabajar">Nuestra forma de trabajar</h4>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h5 class="tw-text-xl tw-font-medium"><i class="bi bi-search tw-text-2xl tw-mr-2"></i><span
+                                data-i18n="proceso1">Diagnóstico gratuito.</span></h5>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h5 class="tw-text-xl tw-font-medium"><i class="bi bi-gear tw-text-2xl tw-mr-2"></i><span
+                                data-i18n="proceso2">Plan modular según tus prioridades.</span></h5>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h5 class="tw-text-xl tw-font-medium"><i class="bi bi-lightning tw-text-2xl tw-mr-2"></i><span
+                                data-i18n="proceso3">Implementación ágil.</span></h5>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h5 class="tw-text-xl tw-font-medium"><i class="bi bi-graph-up tw-text-2xl tw-mr-2"></i><span
+                                data-i18n="proceso4">Crecimiento continuo con soporte cercano.</span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="tw-flex tw-w-full tw-flex-col tw-items-center tw-gap-6 tw-p-[5%] tw-px-[10%]"
+            aria-labelledby="cta-title">
+            <h2 id="cta-title" class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl" data-i18n="contactoTitle">
+                El futuro de tu negocio empieza hoy.
+            </h2>
+            <div class="tw-flex tw-flex-col tw-items-center tw-gap-6 tw-text-center tw-max-w-[800px]">
+                <p class="tw-text-lg tw-text-gray-300" data-i18n="contactoDesc">
+                    No esperes a que la competencia te adelante. Activá tu motor digital y empezá a crecer con nosotros.
+                </p>
+                <div class="tw-flex tw-flex-wrap tw-justify-center tw-gap-3">
+                    <!-- <a href="https://calendly.com/tu-enlace"
+                        class="btn tw-bg-[#7e22ce] tw-bg-opacity-70 tw-shadow-lg tw-px-5 tw-py-3 tw-rounded hover:tw-scale-[1.03] tw-transition-transform"
+                        target="_blank" rel="noopener" data-i18n="agendarDemo">
+                        Agendar una demostración
+                    </a> -->
+                    <a href="https://wa.me/5491132509827"
+                        class="btn tw-border tw-border-white/40 tw-px-5 tw-py-3 tw-rounded hover:tw-bg-white/10"
+                        target="_blank" rel="noopener" data-i18n="escribirWhatsApp">
+                        Escribir por WhatsApp
+                    </a>
+                    <a href="mailto:contact@nextwrld.com"
+                        class="btn tw-border tw-border-white/0 tw-px-5 tw-py-3 tw-rounded tw-text-white/80 hover:tw-text-white" data-i18n="enviarCorreo">
+                        Enviar correo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer
+        class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col">
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-3xl max-md:tw-text-xl" data-i18n="ubicacion">Ubicacion</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <span class="footer-link" data-i18n="ubicacion1">Buenos Aires, Argentina</span>
+                <span class="footer-link" data-i18n="ubicacion2">Caracas, Venezuela</span>
+                <span class="footer-link" data-i18n="emailFooter">contact@nextwrld.com</span>
+            </div>
+        </div>
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-3xl max-md:tw-text-xl" data-i18n="empresa">Empresa</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="#sobre-nosotros" class="footer-link" data-i18n="sobreNosotros">Sobre nosotros</a>
+                <a href="#servicios" class="footer-link" data-i18n="servicios">Servicios</a>
+                <a href="#contacto" class="footer-link" data-i18n="contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-3xl max-md:tw-text-xl" data-i18n="redesSociales">Redes sociales</h2>
+            <div class="tw-flex tw-gap-4">
+                <a href="https://www.instagram.com/nextwrldengine" aria-label="Instagram de Next Wrld" target="_blank"
+                    rel="noopener">
+                    <i class="bi bi-instagram tw-text-2xl"></i>
+                </a>
+                <a href="https://twitter.com/nextwrldengine" aria-label="Twitter de Next Wrld" target="_blank"
+                    rel="noopener">
+                    <i class="bi bi-twitter tw-text-2xl"></i>
+                </a>
+                <span class="tw-text-xs tw-self-center tw-ml-2" data-i18n="handle">@nextwrldengine</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+<script type="module" src="./src/js/index.js" defer></script>
+
+</html>

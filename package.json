@@ -1,0 +1,13 @@
+{
+    "name": "saasy-dark",
+    "version": "1.0.0",
+    "description": "SaaSy Dark landing page",
+    "scripts": {
+        "start:tailwind": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind-runtime.css --watch",
+        "build:tailwind": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind-build.css --minify"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.0",
+        "gsap": "^3.12.0"
+    }
+}
