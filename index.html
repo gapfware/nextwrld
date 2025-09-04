@@ -7,15 +7,25 @@
     <title data-i18n="next_wrld_title">Next Wrld - Impulsamos tu negocio con motores digitales modulares</title>
     <meta name="description"
         content="Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu empresa." />
-    <link rel="canonical" href="https://nextwrld.com" />
+    <link rel="canonical" href="https://web.nextwrld.com" />
     <meta name="robots" content="index, follow" />
     
     <!-- Favicon configuration -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/logo.png" />
-    <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/logo.png" />
-    <meta name="msapplication-TileImage" content="./assets/logo/logo.png" />
+<!-- Favicon básico -->
+<link rel="icon" href="./assets/logo/favicon.ico" sizes="any">
+
+<!-- Favicons en PNG -->
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="./assets/logo/favicon-48x48.png">
+
+<!-- Apple Touch (iOS/iPadOS) -->
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/apple-touch-icon.png">
+
+<!-- (Opcional) Forzar actualización por versión -->
+<link rel="icon" href="./assets/logo/favicon.ico?v=2">
+
+
     <meta name="theme-color" content="#7e22ce" />
 
     <!-- Open Graph / Facebook -->
@@ -24,14 +34,14 @@
         content="Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu empresa." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nextwrld.com" />
-    <meta property="og:image" content="https://nextwrld.com/assets/images/og-image.jpg" />
+    <meta property="og:image" content="https://nextwrld.com/assets/logo/nextwrld_logo_256x256.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Next Wrld - Impulsamos tu negocio con motores digitales modulares" />
     <meta name="twitter:description"
         content="Ganá tiempo, reducí costos y acelerá tu crecimiento con soluciones diseñadas para escalar tu empresa." />
-    <meta name="twitter:image" content="https://nextwrld.com/assets/images/og-image.jpg" />
+    <meta name="twitter:image" content="https://nextwrld.com/assets/logo/nextwrld_logo_256x256.png" />
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -40,7 +50,7 @@
             "@type": "Organization",
             "name": "Next Wrld",
             "url": "https://nextwrld.com",
-            "logo": "https://nextwrld.com/assets/logo/logo.png",
+            "logo": "https://nextwrld.com/assets/logo/nextwrld_logo_256x256.png",
             "description": "Impulsamos tu negocio con motores digitales modulares. Soluciones para escalar empresas.",
             "contactPoint": {
                 "@type": "ContactPoint",
@@ -88,41 +98,55 @@
 
 <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white">
 
-    <header
-        class="tw-sticky tw-top-0 tw-z-20 tw-flex tw-items-center tw-h-[60px] max-lg:tw-h-auto tw-w-full tw-bg-black tw-bg-opacity-90 tw-backdrop-blur-sm tw-px-[5%] lg:tw-justify-center lg:tw-gap-8">
-        <a class="tw-h-[60px] tw-w-[60px] tw-p-[4px]" href="#hero">
-            <img src="./assets/logo/logo.png" alt="Logo de Next Wrld" class="tw-object tw-h-full tw-w-full" width="60"
-                height="60" loading="eager" decoding="async" />
-        </a>
-        <span class="headline tw-text-3xl tw-font-bold lg:tw-ml-4" style="white-space: nowrap;">NEXT WRLD</span>
-        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md tw-hidden lg:tw-flex" id="collapsed-header-items">
-            <div
-                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-flex-col max-lg:tw-place-items-center max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
-                <a class="header-links" href="#servicios" data-i18n="servicios" onclick="closeMobileMenu()">Servicios</a>
-                <a class="header-links" href="#por-que-elegirnos" data-i18n="porQueElegirnos" onclick="closeMobileMenu()">Por qué elegirnos</a>
-                <a class="header-links" href="#sobre-nosotros" data-i18n="sobreNosotros" onclick="closeMobileMenu()">Sobre nosotros</a>
-                <a class="header-links" href="#contacto" data-i18n="contacto" onclick="closeMobileMenu()">Contacto</a>
-            </div>
-            <div
-                class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
-                <div class="tw-relative">
-                    <div class="tw-flex tw-items-center tw-gap-1">
-                        <button id="lang-es" class="tw-px-3 tw-py-1 tw-text-sm tw-bg-gray-700 tw-text-white tw-rounded hover:tw-bg-purple-700 tw-transition-colors" onclick="window.changeLanguage('es')">ESP</button>
-                        <button id="lang-en" class="tw-px-3 tw-py-1 tw-text-sm tw-bg-gray-700 tw-text-white tw-rounded hover:tw-bg-purple-700 tw-transition-colors" onclick="window.changeLanguage('en')">ENG</button>
-                    </div>
-                </div>
-                <a href="#contacto" aria-label="Iniciar conversación"
-                    class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2 tw-focus-visible:tw-ring-2 tw-focus-visible:tw-ring-white"
-                    data-i18n="iniciarConversacion" onclick="closeMobileMenu()">
-                    Iniciar conversación
-                    <i class="bi bi-arrow-right"></i>
-                </a>
-            </div>
+<header
+  class="tw-sticky tw-top-0 tw-z-20 tw-flex tw-items-center tw-h-[60px] max-lg:tw-h-auto tw-w-full tw-bg-black tw-bg-opacity-90 tw-backdrop-blur-sm tw-px-[5%] lg:tw-justify-center lg:tw-gap-8">
+
+  <!-- LOGO: cuadrado 60x60 sin padding, llena el área sin deformarse -->
+  <a class="tw-h-[100px] tw-w-[60px]" href="#hero" aria-label="Next Wrld Home">
+    <img
+      src="./assets/logo/nextwrld_logo_256x256.png"
+      alt="Logo de Next Wrld"
+      class="tw-block tw-h-full tw-w-full tw-object-contain tw-object-center tw-select-none"
+      loading="eager" decoding="async" />
+  </a>
+
+  <a href="#hero" class="headline tw-text-3xl tw-font-bold !tw-ml-0" style="white-space: nowrap;">NEXT WRLD</a>
+
+  <div class="collapsible-header animated-collapse max-lg:tw-shadow-md tw-hidden lg:tw-flex" id="collapsed-header-items">
+    <div
+      class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-flex-col max-lg:tw-place-items-center max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+      <a class="header-links" href="#servicios" data-i18n="servicios" onclick="closeMobileMenu()">Servicios</a>
+      <a class="header-links" href="#por-que-elegirnos" data-i18n="porQueElegirnos" onclick="closeMobileMenu()">Por qué elegirnos</a>
+      <a class="header-links" href="#sobre-nosotros" data-i18n="sobreNosotros" onclick="closeMobileMenu()">Sobre nosotros</a>
+      <a class="header-links" href="#contacto" data-i18n="contacto" onclick="closeMobileMenu()">Contacto</a>
+    </div>
+    <div
+      class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+      <div class="tw-relative">
+        <div class="tw-flex tw-items-center tw-gap-1">
+          <button id="lang-es"
+            class="tw-px-3 tw-py-1 tw-text-sm tw-bg-gray-700 tw-text-white tw-rounded hover:tw-bg-purple-700 tw-transition-colors"
+            onclick="window.changeLanguage('es')">ESP</button>
+          <button id="lang-en"
+            class="tw-px-3 tw-py-1 tw-text-sm tw-bg-gray-700 tw-text-white tw-rounded hover:tw-bg-purple-700 tw-transition-colors"
+            onclick="window.changeLanguage('en')">ENG</button>
         </div>
-        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white tw-hidden max-lg:tw-block"
-            onclick="toggleHeader()" aria-label="Abrir menú" aria-controls="collapsed-header-items"
-            aria-expanded="false" id="collapse-btn"></button>
-    </header>
+      </div>
+      <a href="#contacto" aria-label="Iniciar conversación"
+        class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2 tw-focus-visible:tw-ring-2 tw-focus-visible:tw-ring-white"
+        data-i18n="iniciarConversacion" onclick="closeMobileMenu()">
+        Iniciar conversación
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <button
+    class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white tw-hidden max-lg:tw-block"
+    onclick="toggleHeader()" aria-label="Abrir menú" aria-controls="collapsed-header-items"
+    aria-expanded="false" id="collapse-btn"></button>
+</header>
+
 
     <main id="main-content">
         <section
