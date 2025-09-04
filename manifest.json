@@ -1,0 +1,49 @@
+{
+    "name": "Next Wrld",
+    "short_name": "NextWrld",
+    "description": "Impulsamos tu negocio con motores digitales modulares",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1e1b4b",
+    "theme_color": "#7e22ce",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./assets/logo/favicon_16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/logo/favicon_32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/logo/favicon_48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/logo/favicon_64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/logo/favicon_128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/logo/favicon_256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./assets/logo/favicon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
